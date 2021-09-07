@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    font-size: 14px;
+    /*	font-family: "Lato", sans-serif;*/
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.top {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-weight: 400;
+    color: #4d4d4d;
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo-cont {}
+
+.logo-block {
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact {
+    padding-top: 10px;
+
+}
+
+.menu-cont {
+
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    background: #6db42f;
+    padding: 3px 7px;
+    border-radius: 15px;
+}
+
+.menu a {
+    padding: 5px 7px;
+    font-size: 12px;
+    color: #fff;
+    /*background:#6db42f;*/
+    text-decoration: none;
+}
+
+.top-item {
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.top-item img {
+    margin-left: 3px;
+    margin-right: 3px;
+    position: relative;
+    top: 3px;
+}
+
+.header {
+    position: relative;
+    top: 128px;
+    width: 100%;
+    z-index: 100;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #2d2c2c;
+}
+
+.header a {
+    text-decoration: none;
+    color: #fff;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-left: 25px;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    /*	font-family: "Montserrat", sans-serif;*/
+}
+
+.header_banner {
+    width: 100%;
+    background: url("../img/bouquet-mob.jpg") center no-repeat;
+    background-size: cover;
+    height: 600px;
+    color: #fff;
+    line-height: 1.5;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.main-title-header_banner {
+    padding-top: 350px;
+}
+
+.header_banner h1 {
+    line-height: normal;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.header_banner p {
+    font-size: 18px;
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-cont {
+    padding-top: 10px;
+}
+
+.big-button {
+    /*		font-family:"Montserrat";*/
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 13px 30px;
+    background: rgb(45, 44, 44) none repeat scroll 0% 0%;
+    border-radius: 50px;
+
+}
+
+.big-button:hover {
+    cursor: pointer;
+    background: #6db42f;
+
+}
+
+.best-title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(45, 44, 44);
+    padding: 50px 0;
+    text-transform: uppercase;
+}
+
+.slide_block>div {
+
+    text-align: center;
+
+}
+
+@media screen and (min-width: 990px) {
+    .mobile {
+        display: none;
+    }
+
+    .pc {
+        display: visible;
+    }
+
+}
