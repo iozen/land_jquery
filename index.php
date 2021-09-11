@@ -259,23 +259,15 @@
             </div>
         </div>
     </section>
-
     <section class="thanks contact_form pt50 pb50">
         <div class="container">
             <div class="item" align="center">
-
                 <img alt="Веселий персонаж у формі качана кукурудзи" src="img/get_conversation.jpg">
                 <h1 class="">Дякуємо за звернення!</h1>
                 <h2 class="">З вами зв'яжуться найближчим часом.</h2>
-
-
-
             </div>
         </div>
     </section>
-
-
-
     <section class="contact_form pt25 pb25" id="contact">
         <div class="container">
             <div class="items_block_center">
@@ -295,10 +287,8 @@
                         <div class="items_block_form">
                             <div class="form_item">
                                 <div><label>ПІБ<i class="required"> (Обов'язкове)</i></label></div>
-                                <input name="pib" id="pib" value="<?php echo val_from_get('pib'); ?>"  required>
+                                <input name="pib" id="pib" value="<?php echo val_from_get('pib'); ?>" required>
                                 <?php echo render_error('pib');?>
-
-
                             </div>
                         </div>
                         <div class="items_block_form">
@@ -373,7 +363,6 @@
     <script src="js/carousel.min.js"></script>
     <script src="js/to_top.js"></script>
     <script src="js/main.js"></script>
-
 </body>
 
 </html>
