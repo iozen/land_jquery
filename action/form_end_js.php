@@ -3,7 +3,7 @@
 header("Content-type: application/json; charset=utf-8");
 if ($res['error'] == null) {
     //$db->add_form($res['user']['fio'], $res['user']['mobile'], $res['user']['email'], $res['user']['msg']);
-    //    $send->send($res['user'],  $url."?status=ok&key=$key", 'form');
+    $send->send($res['user'],  "no", 'form');
     $data = array();
     $data['status'] = "success";
 
@@ -11,7 +11,7 @@ if ($res['error'] == null) {
     echo $final;    
     exit;
 } else {
-    // $send->send($res['user'],  $url."?status=no&key=$key", 'form');
+   // $send->send($res['user'],  $url."?status=no&key=$key", 'form');
     $data = array();
     $data['status'] = "error";
 

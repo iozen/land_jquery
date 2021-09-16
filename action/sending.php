@@ -11,39 +11,22 @@ class Sending {
         $this->err['error'] = null;
         $this->err['message'] = array();
         $this->err['code'] = array();
-        
+
         $this->typed = 'form';
     }
 
-    public function send($arra_y, $url, $type) {
+    public function send($user, $url, $type) {
 
-        if (!empty($type)) {
-            $this->typed = $type;
-        }
+        $to      = 'sssr25@gmail.com';
+        $subject = 'Повідомлення із сайту agro-sweet.com.ua';
+        $message = "Піб: " . $user['pib'] . " \n";
+        $message .= "Мобільний: " . $user['mobile'] . " \n";
+        $message .= "Email: " . $user['email'] . " \n";
+        $message .= "Повідомлення: " . $user['msg'] . " \n";
+        $headers = 'From: info@agro-sweet.com'       . "\r\n" .
+            'X-Mailer: PHP/' . phpversion();
+        mail($to, $subject, $message, $headers);
 
-        if ($this->typed == 'form') {
-            $tp = array(
-                'Content-Type: multipart/form-data',
-                'Accept: application/json'
-            );
-        }
-
-        if ($this->typed == 'json') {
-            $tp = array(
-                'Content-Type: application/json'
-            );
-        }
-
-        $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, $url);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_POSTFIELDS, $arra_y);
-        curl_setopt($ch, CURLOPT_HTTPHEADER, $tp);
-        $rs = array();
-        $rs['output'] = curl_exec($ch);
-        $rs['error'] = curl_error($ch);
-        curl_close($ch);
-        return $rs;
     }
 
 }
