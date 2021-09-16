@@ -1,7 +1,7 @@
 $(document).ready(function() {
     /*header menu */
     $(".menu_block_mob_top").click(function() {
-        $(".mobile_menu_container").toggle("fast");
+        $(".mobile_menu_container").slideToggle("fast");
     });
     /* Smooth Scrolling */
     $(function() {
