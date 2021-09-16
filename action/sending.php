@@ -25,7 +25,7 @@ class Sending {
         $message .= "Повідомлення: " . $user['msg'] . " \n";
         $headers = 'From: info@agro-sweet.com'       . "\r\n" .
             'X-Mailer: PHP/' . phpversion();
-        mail($to, $subject, $message, $headers);
+       return mail($to, $subject, $message, $headers);
 
     }
 
